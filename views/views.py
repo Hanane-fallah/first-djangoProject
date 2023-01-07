@@ -15,8 +15,14 @@ def funky(request):
 
 def danger(request):
     g = request.POST["guess"]
-    print('guess: ', g)
     context = {
         'guess': g
     }
     return render(request, 'views/danger.html', context)
+
+
+def rest(request, guess):
+    context = {
+        'guess': guess
+    }
+    return render(request, 'views/rest.html', context)
