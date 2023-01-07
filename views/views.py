@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.views import View
 
@@ -37,3 +37,6 @@ class RestMainView(View):
         }
         return render(request, 'views/remainview.html', context)
 
+
+def bounce(request):
+    return  HttpResponseRedirect('http://127.0.0.1:8000/views/funky')

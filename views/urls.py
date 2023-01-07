@@ -9,5 +9,5 @@ urlpatterns = [
     path('danger', views.danger, name='danger'),
     path('rest/<int:guess>', views.rest, name='rest'),
     path('remain/<int:guess>', views.RestMainView.as_view(), name='remainview'),
-
+    path('bounce/', views.bounce)
 ]
