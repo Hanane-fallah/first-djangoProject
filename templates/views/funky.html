@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>funky</title>
+
+</head>
+<body>
+<h1> funky view </h1>
+<form method="post" action="danger">
+    {% csrf_token %}
+    <input type="text" value="submit" name="guess">
+</form>
+</body>
+</html>
