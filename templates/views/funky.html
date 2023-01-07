@@ -6,10 +6,16 @@
 
 </head>
 <body>
-<h1> funky view </h1>
+<h1> funky func </h1>
 <form method="post" action="danger">
     {% csrf_token %}
-    <input type="number" name="guess">
+
+    {% block content %}
+        <input type="number" name="guess">
+<br><br>
+    {% endblock %}
+    <h4><a href="{% url 'views:rest' guess %}" >Try with rest? </a></h4>
+    <h4><a href="{% url 'views:remainview' guess %}" >Try with remain? </a></h4>
 </form>
 </body>
 </html>

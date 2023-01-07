@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Remain view</title>
-</head>
-<body>
-<h1>Remain View</h1>
-<h5>## <h3>your guess is {{ guess }}</h3> ##</h5>
+{% extends 'views/funky.html' %}
+{% block content %}
+<h1>remain view</h1>
 
-</body>
-</html>
+<h5>## <h3>your guess is {{ guess }}</h3> ##</h5>
+{% endblock %}

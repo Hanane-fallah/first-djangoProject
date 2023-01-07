@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Danger</title>
-</head>
-<body>
+{% extends 'views/funky.html' %}
+{% block content %}
 <h1>danger view</h1>
 <h2>your guess was {{ guess }} !</h2>
-<h4><a href="{% url 'views:rest' guess %}" >Try with rest? </a></h4>
-<h4><a href="{% url 'views:remainview' guess %}" >Try with remain? </a></h4>
 <script>alert('your guess taken');</script>
-</body>
-</html>
+{% endblock %}
